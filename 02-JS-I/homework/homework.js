@@ -112,7 +112,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2== 0){
+  if (num % 2=== 0){
     return true;
   }else {
     return false;
@@ -123,7 +123,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 1){
+  if (num % 2 === 1){
     return true;
   }else {
     return false;
@@ -243,14 +243,14 @@ function esVocal(letra){
   let mensaje="";
   if(letra.length===1){
     for (let vocal of vocales){
-      if(letra == vocal){
+      if(letra === vocal){
         mensaje = "Es vocal";
       }     
     } 
   } else {
     mensaje="";
   }
-  if(mensaje == ""){
+  if(mensaje === ""){
     mensaje= "Dato incorrecto";
   }
   return mensaje;
